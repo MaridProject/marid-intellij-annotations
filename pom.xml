@@ -335,4 +335,41 @@
       </plugin>
     </plugins>
   </build>
+
+  <profiles>
+    <profile>
+      <id>source</id>
+
+      <dependencies>
+        <dependency>
+          <groupId>org.jetbrains</groupId>
+          <artifactId>annotations</artifactId>
+          <version>15.0</version>
+          <scope>provided</scope>
+          <classifier>sources</classifier>
+        </dependency>
+      </dependencies>
+
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>maven-dependency-plugin</artifactId>
+            <executions>
+              <execution>
+                <goals>
+                  <goal>unpack-dependencies</goal>
+                </goals>
+                <phase>process-sources</phase>
+                <configuration>
+                  <includeScope>provided</includeScope>
+                  <includeClassifiers>sources</includeClassifiers>
+                  <outputDirectory>src/main/java</outputDirectory>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 </project>
