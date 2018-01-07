@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.marid</groupId>
+  <artifactId>marid-intellij-annotations</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <name>JetBrains annotations</name>
+  <url>http://sf.net/projects/marid</url>
+  <description>JetBrains annotations as JPMS module</description>
+
+  <developers>
+    <developer>
+      <id>dmovc</id>
+      <name>Dmitry Ovchinnikov</name>
+      <timezone>+3</timezone>
+      <email>d.ovchinnikow@gmail.com</email>
+      <roles>
+        <role>Project Lead</role>
+      </roles>
+    </developer>
+  </developers>
+
+  <properties>
+    <project.encoding>UTF-8</project.encoding>
+    <project.build.sourceEncoding>${project.encoding}</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>${project.encoding}</project.reporting.outputEncoding>
+
+    <java.version>1.9</java.version>
+    <maven.compiler.source>${java.version}</maven.compiler.source>
+    <maven.compiler.target>${java.version}</maven.compiler.target>
+
+    <repo-id>sourceforge</repo-id>
+    <repo-name>sourceforge</repo-name>
+    <repo-url>sftp://frs.sf.net/home/frs/project/marid/repo</repo-url>
+
+    <lineLength>120</lineLength>
+
+    <test.groups>normal</test.groups>
+  </properties>
+
+  <scm>
+    <connection>scm:git:https://github.com/MaridProject/marid.git</connection>
+    <developerConnection>scm:git:https://github.com/MaridProject/marid.git</developerConnection>
+    <url>http://sf.net/p/marid/code</url>
+    <tag>HEAD</tag>
+  </scm>
+
+
+
+</project>
